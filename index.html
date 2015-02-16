@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KniteBoston Entertainment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap-theme.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<script src="jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-3.2.0-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+</head>
+<body>
+		<div id="backgrounds">
+			<ul>
+				<li class="list-unstyled" id="gradient" data-img="media/grad.png" data-class="gradient"></li>
+				<li class="list-unstyled" id="bars" data-img="media/16sm.png" data-class="bars"></li>
+				<li class="list-unstyled" id="diamonds" data-img="media/17.png" data-class="diamonds"></li>
+			</ul>
+		</div>
+		<div class="container-fluid">
+			<div class="row" id="media">
+				<div class="col-lg-3">
+					<div id="controls" class="text-center"><span class='glyphicon glyphicon-pause controls' id="pause" title='Pause'></span><span class='glyphicon glyphicon-play controls' id="play" title='Play'></span></div>
+				</div>
+				<div class="col-lg-6">
+					<div class="text-center">
+						<ul>
+							<li class="list-inline"><a href="http://www.facebook.com/kniteboston" id="facebook"><img src="media/facebook.png" class="smedia floating" title="Facebook"></a></li>
+							<li class="list-inline"><a href="http://www.instagram.com/kniteboston" id="instagram"><img src="media/instagram.png"class="smedia floating" title="Instagram"></a></li>
+							<li class="list-inline"><a href="http://www.twitter.com/kniteboston" id="twitter"><img src="media/twitter.png"class="smedia floating" title="Twitter"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="text-center">
+							<a id="contact" role="button" class="btn" data-toggle="modal" href="#contactBox" data-toggle="tooltip" title="Contact"><span class="glyphicon glyphicon-envelope"></span></a></br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			</div>
+			<div id="main" class="row vertical">
+				<div class="col-md-4">
+					<h1 id="KniteBos" class="text-center">KniteBoston</h1>
+				</div>
+				<div class="col-md-4">
+					<img class="img-responsive logo" src="media/Logo.png">
+				</div>
+				<div class="col-md-4">
+					<h1 id="ent" class="text-center">Entertainment</h1>
+				</div>
+			</div>
+			<div class=row>
+				<div class="col-lg-12 text-center">
+					<h2 id="slogan">Champions of Boston Nightlife</h2>
+				</div>
+			</div>
+		</div>
+		<div id="contactBox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="contactModal" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h1 class="modal-title text-center" id="contactModal">Contact</h1>
+					</div>
+					<div class="modal-body">
+						<form role="form" method="post" action="message.php">
+				  		  <div class="form-group">
+				  		    <label for="name">Name:</label>
+				  		    <input class="form-control" id="name" placeholder="Name" required>
+				  		  </div>
+						  <div class="form-group">
+						    <label for="email">Email address:</label>
+						    <input type="email" class="form-control" id="email" placeholder="Email"required>
+						  </div>
+						  <div class="form-group">
+						    <label for="number">Phone Number:</label>
+						    <input class="form-control" id="number" placeholder="Phone Number">
+						  </div>
+						  <div class="form-group">
+							<label for="reason">Reason for Contact:</label></br>
+				  			<select id="reason" class="form-control col-md-12" required>
+								<option disabled selected>Select Reason for Contact</option>
+				  				<option>Event Planning</option>
+				  				<option>Sponsorship/Partnership</option>
+				  				<option>Job Opportunity</option>
+				  				<option>Other</option>
+				  			</select>
+						  </div>
+						  <div class="form-group">
+							  	<label for"message"> Message: </label>
+								<textarea id="message" placeholder="Message" rows="8" class="form-control col-md-12" required></textarea>
+						  </div>
+						  <div class="checkbox">
+						    <label><input id="spam" type="checkbox"> Subscribe to Newsletter</label>
+						  </div>
+						  <div class="text-center">
+						  	<button type="submit" class="btn btn-default">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
