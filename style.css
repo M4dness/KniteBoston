@@ -1,10 +1,11 @@
+
 body{
-	background-color:#222222;
-	background-image:url('media/16sm1.png');
-	background-position: center center;
-}
-html, body{
-	height:100%;
+	background: rgb(14, 14, 14);
+	background: -moz-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
+	background: -webkit-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
+	background: -o-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
+	background: -ms-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
+	background: linear-gradient(0deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
 }
 
 .modal-content{
@@ -79,12 +80,13 @@ ul {
 	     display: flex;
 	     align-items: center;
 		}
-	body {
-		background-image:url('media/16.png');
-	}
 	#ent, #KniteBos{
 		font-size:2.25em;
 	}
+	html, body{
+		height:100%;
+	}
+	
 }
 
 @media (min-width: 990px) and (max-width: 1200px) { 
@@ -103,64 +105,11 @@ ul {
 	}
 	#ent, #KniteBos{
 		font-size:2.25em;
-	}
+	}	
 }
 
 .logo{
-	max-width:420px;
+	max-width:320px;
 	margin:0 auto;
 	width:100%;
-}
-
-#backgrounds {
-	padding-top:5px;
-	background-color:#262626;
-	width:80px;
-	position:fixed;
-	top:0;
-	left:0;
-}
-
-#backgrounds li {
-	padding:0;
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	margin:10px auto;
-	cursor:pointer;
-	border:solid white 1px;
-	background-position: center center;
-	background-size: 100%;
-}
-
-#bars {
-	background-color:#333333;
-}
-
-.gradient {
-	background: rgb(14, 14, 14);
-	background: -moz-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
-	background: -webkit-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
-	background: -o-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
-	background: -ms-linear-gradient(270deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
-	background: linear-gradient(0deg, rgb(14, 14, 14) 0%, rgb(34, 34, 34) 71%);
-
-}
-
-.bars {
-	background-image:url('media/16sm.png');
-}
-
-.diamonds {
-	background-image:url('media/17.png');
-}
-
-.controls {
-	color:#93191C;
-	font-size:4.25em;
-	cursor:pointer;
-}
-
-.controls:hover {
-	color:#CCCCCC;
 }

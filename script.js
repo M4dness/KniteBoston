@@ -4,28 +4,17 @@ var isPlaying = true;
 
 
 $(document).ready(function(){
-		$("#play").hide();
+		//$("#play").hide();
 		$("#contact, .smedia, .controls").tooltip({
 			placement:'bottom'
 		});
-		var controllers = $("#gradient, #diamonds, #bars");
-		controllers.each(function(){
-			$(this).css("background-image", "url('"+$(this).data("img") +"')");
-		});
-		controllers.click(function(){
-			controllers.each(function(){
-				$("body").removeClass($(this).data("class"));
-			});
-			$("body").addClass($(this).data("class"));
-		});
-		
 		$("#facebook, #instagram, #twitter").mouseover(function(){
 			$(this).children().first().attr('src','media/'+$(this).attr('id')+'1.png');
 		});
 		$("#facebook, #instagram, #twitter").mouseout(function(){
 			$(this).children().first().attr('src','media/'+$(this).attr('id')+'.png');
 		});
-		$(".controls").click(function(){
+		/*$(".controls").click(function(){
 			if(isPlaying){
 				$("#pause").hide();
 				$("#play").show();
@@ -37,7 +26,7 @@ $(document).ready(function(){
 			}
 		});	
 		
-		/*$(".floating").each(function(){
+		$(".floating").each(function(){
 			var thisObj = $(this);
 			var floatObj = thisObj.clone();
 			var offset = thisObj.offset();
@@ -71,7 +60,7 @@ $(document).ready(function(){
 		});*/
 });
 
-function controlToggle(e){
+/*function controlToggle(e){
 	var btn = e.target;
 	if(isPlaying){
 		$(btn).replaceWith(playGlyph);
@@ -96,4 +85,4 @@ function growBy(e, value){
 	var width = $(obj).width();
 	var height = $(obj).height();
 	$(obj).css("height","+="+height/width*value).css("width","+="+value).css("left","-="+value/2).css("top","-="+height/width*value/2);
-}
+} */
